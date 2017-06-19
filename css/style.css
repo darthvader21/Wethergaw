@@ -1,0 +1,89 @@
+html, body {
+  background: url("../img/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  background-position: center;
+}
+
+/*The entire which is wrapped in*/
+.container {
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+}
+
+/*The images or the icons which they have to update according to the weather*/
+.weathericon {
+  height: 15vw;
+  width: 15vw;
+  margin: 0 auto;
+}
+
+/*temperature and location wrap*/
+.wrap {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 30px;
+    font-family: Times New Roman
+Georgia;
+}
+
+/*Next thing is the location you need to insert*/
+.location {
+    margin-right: 20px;
+    color: black;
+    text-shadow: 0.5px 0.5px azure;
+}
+
+/*humidity and windspeed got wrapped*/
+.wrap2 {
+    display: flex;
+    justify-content: center; 
+    padding: 20px;  
+}
+
+/*windspeed and humidity icons*/
+.humidity img, .windspeed img{
+  height: 40px;
+  width: 40px; 
+}
+
+.humidity {
+  padding-right: 40px;
+  color: black;
+  text-shadow: 0.5px 0.5px azure;
+}
+
+.temperature {
+  color: black;
+  text-shadow: 0.5px 0.5px azure;
+}
+.windspeed{
+  color: black;
+  text-shadow: 0.5px 0.5px azure;
+}
+
+@media (max-width: 467px) {
+  .weathericon {
+    height: 50vw;
+    width: 50vw;
+  }
+}
+
+@media (max-width: 769px) {
+  .weathericon {
+    height: 50vw;
+    width: 50vw;
+  }
+  .location, .temperature,  {
+    font-size: 50px;
+  }
+  .windspeed, .humidity {
+    font-size: 20px;
+  }
+}
